@@ -1,0 +1,5 @@
+vlib work
+vlog SPI_SLAVE.v RAM.v SPI_Wrapper.v SPI_Wrapper_tb.v
+vsim -voptargs=+acc SPI_Wrapper_TB
+add wave -position end sim:/SPI_Wrapper_TB/*
+run -all
